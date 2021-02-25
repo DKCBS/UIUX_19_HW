@@ -1,3 +1,7 @@
+html,
+body{
+    height: 100%;
+}
 /* Header Section */
 .Nav{
     display: flex;
@@ -34,6 +38,10 @@
         justify-content: center;
         width: 104px;
         height: 107px;
+}
+
+.content{
+    min-height: 100%;
 }
 /* Skills work  */
 .flex{
@@ -92,52 +100,53 @@ margin: 85px 0px 60px 50px;
     padding: 0px 37.5px;
 }
 
-/* Footer Styles */
-.footer{
-    height: 184px;
-    left: 0px;
-    right: 0px;
-    top: 1200px;
-    bottom: 0px;
+/* Footer Styles*/
+.sticky-footer{
+    background: #F7F7F7;
+    height: 164px;
+    position: relative;
     width: 100%;
-    display: flex;
+}
+.footer .footer-bottom{
     background-color: #F7F7F7;
-    align-items: center;
-    justify-content: space-between;
+    height: 40px;
+    text-align: right;
     position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+.footer-bottom{
+    text-align: right;
+    position: relative;
+    bottom: 80px;
 }
 
-.footer a{
-    display: flex;
+.footer-text{
+text-align: right;
+position: relative;
+bottom: 120px;
+}
+.sticky-footer a{
     font-size: 18px;
+    font-weight: lighter;
+    color: #0089B4;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
 }
-.footer p{
+.footer-link, .footer-text{
     font-size: 18px;
+    font-weight: lighter;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: space-around;
-    padding: 10px;
+    margin: 0px 50px;
 }
-
-#Copy{
-    font-weight: lighter;
+.footer-bottom{
     font-size: 12px;
-    align-items: flex-end;
-}
-#Getin{
     font-weight: lighter;
-    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 50px;
 }
-#Bold{
-    font-weight: bolder;
-    align-items: center;
-}
-
 @media only screen and (max-width: 600px) {
     .wholeflex{
       flex-direction: column;
